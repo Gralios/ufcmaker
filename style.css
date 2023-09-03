@@ -20,12 +20,20 @@ a {
   text-align: center;
   padding: 0 2em;
 }
+
+.et-hero-tabs img{
+  width: 15%;
+}
 .et-hero-tabs h1,
 .et-slide h1 {
   font-size: 2rem;
   margin: 0;
   letter-spacing: 1rem;
 }
+.et-hero-tabs h1{
+  text-decoration: underline;
+}
+
 .et-hero-tabs h3,
 .et-slide h3 {
   font-size: 1rem;
@@ -111,7 +119,7 @@ h1{
 }
 
 h3{
-  width: 60%;
+  width: 100%;
 }
 
 .et-slide img {
@@ -130,4 +138,43 @@ a{
 
 a:hover{
   color: black;
+}
+
+@media (max-width: 1000px) {
+  .et-hero-tabs h1{
+    font-size: 60px;;
+  }
+  .et-hero-tabs h3{
+    font-size: 30px;;
+  }
+  .et-hero-tabs,
+  .et-slide {
+    width: 135%;
+    display: flex;
+    top: 50%;
+  }
+  .et-slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    width: 50%;
+  }
+  .et-hero-tabs img{
+    width: 40%;
+  }
+  .et-slide h1{
+    font-size: 70px;
+  }
+  .et-slide h3{
+    font-size: 30px;
+  }
+  #tab-angular img{
+    height: 20%;
+  }
+  .et-hero-tabs-container a{
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
